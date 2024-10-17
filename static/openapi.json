@@ -1,0 +1,48 @@
+{
+  "openapi": "3.0.1",
+  "info": {
+    "title": "Sample Go API",
+    "description": "A Sample GO API made with gofr.dev",
+    "version": "1.0.0"
+  },
+  "paths": {
+    "/hello": {
+      "get": {
+        "summary": "Get a welcome message",
+        "description": "Returns a welcome message that includes the application's name.",
+        "responses": {
+          "200": {
+            "description": "A welcome message.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "string",
+                  "example": "Hello! Welcome to MyApp"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/logs": {
+      "get": {
+        "summary": "Generate sample logs",
+        "description": "Triggers sample logs at different levels (debug, info, warn, error) and returns a success message.",
+        "responses": {
+          "200": {
+            "description": "Success message after logging.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "string",
+                  "example": "success"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
