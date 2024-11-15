@@ -2,7 +2,7 @@ module github.com/sample-app
 
 go 1.22.3
 
-require gofr.dev v1.0.3-0.20241113062541-882298906ae7
+require gofr.dev v1.27.0
 
 require (
 	cloud.google.com/go v0.116.0 // indirect
