@@ -2,7 +2,7 @@ FROM alpine:latest
 
 # Copy only the required directories and files
 COPY main ./main
-COPY ./static /static
+COPY ./orphan-domain-handler/static /static
 
 
 
