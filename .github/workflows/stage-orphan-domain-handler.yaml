@@ -1,0 +1,4 @@
+name: stage-orphan-domain-handler.yaml
+on:
+
+jobs:
